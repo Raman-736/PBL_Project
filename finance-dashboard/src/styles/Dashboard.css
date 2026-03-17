@@ -1,0 +1,101 @@
+/* Color Palette & Global Variables */
+:root {
+  --bg-dark: #1a222e;
+  --card-bg: #2d3748;
+  --text-main: #ffffff;
+  --text-secondary: #a0aec0;
+  --accent-blue: #3182ce;
+  --danger-red: #e53e3e;
+  --success-green: #38a169;
+}
+
+.dashboard-container {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+  padding: 20px 40px;
+}
+
+/* Stock Blocks (Top Row) */
+.stock-tags {
+  display: flex;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.stock-tag {
+  background: var(--card-bg);
+  padding: 12px 30px;
+  border-radius: 8px;
+  border: 1px solid #4a5568;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+/* News Cards (Carousel Style) */
+.news-section {
+  display: flex;
+  gap: 15px;
+  margin: 30px 0;
+  align-items: center;
+}
+
+.news-card-label {
+  background: #4a5568;
+  padding: 40px 20px;
+  border-radius: 12px;
+  min-width: 180px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.news-card {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  min-height: 120px;
+}
+
+.news-card.red { background: var(--danger-red); }
+.news-card.green { background: var(--success-green); }
+
+.news-card .badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Impact Analysis (Bottom Professional Block) */
+.impact-container {
+  background: var(--card-bg);
+  border: 1px solid #4a5568;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.impact-header {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.4rem;
+}
+
+.impact-math {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.impact-result {
+  text-align: center;
+}
+
+.percentage-drop {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fc8181;
+}
